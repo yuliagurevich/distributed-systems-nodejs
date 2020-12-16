@@ -3,7 +3,7 @@ const express = require('express')();
 const PORT = 3000;
 const HOST = '127.0.0.1';
 
-express.get('/echo', function (request, response) {
+express.get('/', function (request, response) {
     response.send(`Hit GET`);
 });
 

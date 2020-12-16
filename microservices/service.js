@@ -2,11 +2,12 @@
 
 const app = require('express')();
 
-const PORT = 7000;
+const PORT = 4002;
 const HOST = '127.0.0.1';
 
 app.get('/', (req, res) => {
-    console.log(`Get`);
+    console.log(`Hit service`);
+    
     res.send([
         {
             id: 1,
@@ -20,5 +21,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, HOST, () => {
-    console.log(`Service is listening on port ${PORT}`);
+    console.log(`Service is listening on ${HOST}:${PORT}`);
 });
